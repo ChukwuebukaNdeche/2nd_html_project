@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat App</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <h1><u><center>Cat Photo App</center></u></h1>
+    </header>
+
+    <main>
+        <h2>Cat Photos</h2>
+        <h3>See more <u>cat photos</u> in our gallary</h3>
+        <img src="images/images (12).jpeg" alt="cat photos" width="500" height="300">
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ol>
+            <li> Cat nip</li>
+            <li>Laser pointer</li>
+            <li>Lasagna</li>
+        </ol>
+        <img src="images/lasagna.jpeg" alt="Lasagna" width="200" height="200">
+        <h3>Top 3 things cats hate</h3>
+        <ol>
+            <li>Flea treatments</li>
+            <li>Thunder</li>
+            <li>Other cat</li>
+        </ol>
+        <img src="images/images (13).jpeg" alt="other cats" width="300" height="250">
+
+       <form action="./dashboard" method="POST">
+        <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <input type="radio" id="indoor" name="inOutDoor">
+            <label for="indoor">Indoor</label>
+            <input type="radio" id="outdoor" name="inOutDoor">
+            <label for="outdoor">Outdoor</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input type="checkbox" id="loving" name="opt_1">
+            <label for="loving">Loving</label>
+            <input type="checkbox" id="lazy" name="opt_2">
+            <label for="lazy">Lazy</label>
+            <input type="checkbox" id="enegertic" name="opt_3">
+            <label for="enegertic">Energetic</label>
+        </fieldset><br>
+        <input type="text" placeholder="Cat photo URL">
+        <button type="submit">Submit</button>
+       </form>
+    </main>
+</body>
+</html>
